@@ -1,0 +1,7 @@
+Running: xsim.dir/LEDdecoder_testbench_time_synth/xsimk.exe -simmode gui -wdb LEDdecoder_testbench_time_synth.wdb -simrunnum 0 -socket 65502
+Design successfully loaded
+Design Loading Memory Usage: 6832 KB (Peak: 6832 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 8104 KB (Peak: 8104 KB)
+Simulation CPU Usage: 30 ms

@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/Dimitris/Desktop/lab1/led 2/codes/FourDigitLeDriver.v,1667396410,verilog,,C:/Users/Dimitris/Desktop/lab1/led 2/codes/LEDdecoder.v,C:/Users/Dimitris/Desktop/lab1/led 2/codes/parameters.v,FourDigitLeDriver,,,,,,,,
+C:/Users/Dimitris/Desktop/lab1/led 2/codes/LEDdecoder.v,1667391510,verilog,,C:/Users/Dimitris/Desktop/lab1/led 2/codes/counter.v,,LEDdecoder,,,,,,,,
+C:/Users/Dimitris/Desktop/lab1/led 2/codes/counter.v,1667397223,verilog,,C:/Users/Dimitris/Desktop/lab1/led 2/codes/testbench1.v,,counter,,,,,,,,
+C:/Users/Dimitris/Desktop/lab1/led 2/codes/parameters.v,1666393132,verilog,,,,,,,,,,,,
+C:/Users/Dimitris/Desktop/lab1/led 2/codes/testbench1.v,1667391230,verilog,,,C:/Users/Dimitris/Desktop/lab1/led 2/codes/parameters.v,testbench,,,,,,,,
+C:/Users/Dimitris/Desktop/lab1/led 2/led.sim/sim_1/behav/xsim/glbl.v,1544155482,verilog,,,,glbl,,,,,,,,

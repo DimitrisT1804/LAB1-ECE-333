@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led/codes/FourDigitLeDriver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FourDigitLeDriver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led/codes/LEDdecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led/codes/testbench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder_testbench

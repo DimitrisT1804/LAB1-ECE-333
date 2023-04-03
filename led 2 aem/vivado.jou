@@ -1,0 +1,83 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Oct 30 20:50:29 2022
+# Process ID: 22220
+# Current directory: C:/Users/jimar/Desktop/vivado test/led 2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7328 C:\Users\jimar\Desktop\vivado test\led 2\led.xpr
+# Log file: C:/Users/jimar/Desktop/vivado test/led 2/vivado.log
+# Journal file: C:/Users/jimar/Desktop/vivado test/led 2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/jimar/Desktop/vivado test/led 2/led.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation -mode post-synthesis -type functional
+source LEDdecoder_testbench.tcl
+run 10000 ns
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_simulation -mode post-implementation -type functional
+source LEDdecoder_testbench.tcl
+run 10000 ns
+run 10000 ns
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+current_sim simulation_1
+close_sim
+current_design synth_1
+close_design
+launch_simulation -mode post-synthesis -type functional
+launch_simulation
+launch_simulation
+source LEDdecoder_testbench.tcl
+run 10000 ns
+relaunch_sim
+run 10000 ns
+close_sim
+launch_simulation
+source LEDdecoder_testbench.tcl
+run 10000 ns
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+launch_simulation -mode post-synthesis -type functional
+source LEDdecoder_testbench.tcl
+run 10000 ns
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+current_sim simulation_2
+close_sim
+current_design impl_1
+close_design
+launch_simulation -mode post-implementation -type functional
+source LEDdecoder_testbench.tcl
+run 10000 ns
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+current_design synth_1
+launch_simulation -mode post-synthesis -type timing
+source LEDdecoder_testbench.tcl
+run 10000 ns
+launch_simulation -mode post-implementation -type timing
+source LEDdecoder_testbench.tcl
+run 10000 ns
+close_sim
+current_sim simulation_7
+close_sim
+current_sim simulation_6
+close_sim
+current_sim simulation_5
+close_sim
+close_sim

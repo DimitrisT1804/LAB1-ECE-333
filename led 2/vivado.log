@@ -1,0 +1,867 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Oct 30 20:50:29 2022
+# Process ID: 22220
+# Current directory: C:/Users/jimar/Desktop/vivado test/led 2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7328 C:\Users\jimar\Desktop\vivado test\led 2\led.xpr
+# Log file: C:/Users/jimar/Desktop/vivado test/led 2/vivado.log
+# Journal file: C:/Users/jimar/Desktop/vivado test/led 2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/jimar/Desktop/vivado test/led 2/led.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Dimitris/Desktop/lab1/led' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Oct 30 20:51:09 2022] Launched synth_1...
+Run output will be captured here: C:/Users/jimar/Desktop/vivado test/led 2/led.runs/synth_1/runme.log
+launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/jimar/Desktop/vivado test/led 2/codes/constrains.xdc]
+Finished Parsing XDC File [C:/Users/jimar/Desktop/vivado test/led 2/codes/constrains.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1151.332 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1282.586 ; gain = 294.250
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim/LEDdecoder_testbench_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim/LEDdecoder_testbench_func_synth.v
+INFO: [SIM-utils-54] Inspecting design source files for 'LEDdecoder_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim'
+"xvlog --incr --relax -prj LEDdecoder_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim/LEDdecoder_testbench_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FourDigitLeDriver
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/LEDdecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/testbench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1418a4aa6b4a48d4a5e36705663f45d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot LEDdecoder_testbench_func_synth xil_defaultlib.LEDdecoder_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LEDdecoder
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDPE(INIT=1'b0)
+Compiling module unisims_ver.OBUFT
+Compiling module xil_defaultlib.FourDigitLeDriver
+Compiling module xil_defaultlib.LEDdecoder_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LEDdecoder_testbench_func_synth
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/jimar/Desktop/vivado -notrace
+couldn't read file "C:/Users/jimar/Desktop/vivado": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 30 20:51:51 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LEDdecoder_testbench_func_synth -key {Post-Synthesis:sim_1:Functional:LEDdecoder_testbench} -tclbatch {LEDdecoder_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source LEDdecoder_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'LEDdecoder_testbench_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 1820.719 ; gain = 832.383
+run 10000 ns
+launch_runs impl_1 -jobs 4
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1822.875 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1822.875 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1826.078 ; gain = 0.000
+[Sun Oct 30 20:52:53 2022] Launched impl_1...
+Run output will be captured here: C:/Users/jimar/Desktop/vivado test/led 2/impl_1/runme.log
+launch_simulation -mode post-implementation -type functional
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1926.414 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1926.414 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1926.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode funcsim -nolib -force -file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/func/xsim/LEDdecoder_testbench_func_impl.v"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/func/xsim/LEDdecoder_testbench_func_impl.v
+INFO: [SIM-utils-54] Inspecting design source files for 'LEDdecoder_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/func/xsim'
+"xvlog --incr --relax -prj LEDdecoder_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/func/xsim/LEDdecoder_testbench_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FourDigitLeDriver
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/LEDdecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/testbench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/func/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1418a4aa6b4a48d4a5e36705663f45d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot LEDdecoder_testbench_func_impl xil_defaultlib.LEDdecoder_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LEDdecoder
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDPE(INIT=1'b0)
+Compiling module unisims_ver.OBUFT
+Compiling module xil_defaultlib.FourDigitLeDriver
+Compiling module xil_defaultlib.LEDdecoder_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LEDdecoder_testbench_func_impl
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/jimar/Desktop/vivado -notrace
+couldn't read file "C:/Users/jimar/Desktop/vivado": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 30 20:54:24 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LEDdecoder_testbench_func_impl -key {Post-Implementation:sim_1:Functional:LEDdecoder_testbench} -tclbatch {LEDdecoder_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source LEDdecoder_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'LEDdecoder_testbench_func_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2022.219 ; gain = 196.141
+run 10000 ns
+run 10000 ns
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 21:00:32 2022] Launched impl_1...
+Run output will be captured here: C:/Users/jimar/Desktop/vivado test/led 2/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jimar/Desktop/vivado test/led 2/led.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Sun Oct 30 21:07:03 2022] Launched synth_1...
+Run output will be captured here: C:/Users/jimar/Desktop/vivado test/led 2/led.runs/synth_1/runme.log
+current_sim simulation_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_design synth_1
+close_design
+launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/jimar/Desktop/vivado test/led 2/codes/constrains.xdc]
+Finished Parsing XDC File [C:/Users/jimar/Desktop/vivado test/led 2/codes/constrains.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3619.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim/LEDdecoder_testbench_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim/LEDdecoder_testbench_func_synth.v
+INFO: [SIM-utils-54] Inspecting design source files for 'LEDdecoder_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim'
+"xvlog --incr --relax -prj LEDdecoder_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim/LEDdecoder_testbench_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FourDigitLeDriver
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/LEDdecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/testbench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1418a4aa6b4a48d4a5e36705663f45d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot LEDdecoder_testbench_func_synth xil_defaultlib.LEDdecoder_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2922] 'FourDigitLeDriver' expects 14 arguments [C:/Users/jimar/Desktop/vivado test/led 2/codes/testbench1.v:16]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 3619.391 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'LEDdecoder_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj LEDdecoder_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/FourDigitLeDriver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FourDigitLeDriver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/LEDdecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/testbench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder_testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1418a4aa6b4a48d4a5e36705663f45d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LEDdecoder_testbench_behav xil_defaultlib.LEDdecoder_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2922] 'FourDigitLeDriver' expects 14 arguments [C:/Users/jimar/Desktop/vivado test/led 2/codes/testbench1.v:16]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'LEDdecoder_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj LEDdecoder_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/FourDigitLeDriver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FourDigitLeDriver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/LEDdecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/testbench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1418a4aa6b4a48d4a5e36705663f45d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LEDdecoder_testbench_behav xil_defaultlib.LEDdecoder_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/jimar/Desktop/vivado test/led 2/codes/LEDdecoder.v" Line 1. Module LEDdecoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/jimar/Desktop/vivado test/led 2/codes/FourDigitLeDriver.v" Line 2. Module FourDigitLeDriver doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/jimar/Desktop/vivado test/led 2/codes/LEDdecoder.v" Line 1. Module LEDdecoder doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LEDdecoder
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module unisims_ver.MMCME2_BASE(CLKFBOUT_MULT_F=32.0...
+Compiling module xil_defaultlib.FourDigitLeDriver
+Compiling module xil_defaultlib.LEDdecoder_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LEDdecoder_testbench_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/jimar/Desktop/vivado -notrace
+couldn't read file "C:/Users/jimar/Desktop/vivado": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 30 21:16:25 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LEDdecoder_testbench_behav -key {Behavioral:sim_1:Functional:LEDdecoder_testbench} -tclbatch {LEDdecoder_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source LEDdecoder_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'LEDdecoder_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3619.391 ; gain = 0.000
+run 10000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'LEDdecoder_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj LEDdecoder_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1418a4aa6b4a48d4a5e36705663f45d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LEDdecoder_testbench_behav xil_defaultlib.LEDdecoder_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3619.391 ; gain = 0.000
+run 10000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'LEDdecoder_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj LEDdecoder_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/FourDigitLeDriver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FourDigitLeDriver
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/LEDdecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/testbench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1418a4aa6b4a48d4a5e36705663f45d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LEDdecoder_testbench_behav xil_defaultlib.LEDdecoder_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/jimar/Desktop/vivado test/led 2/codes/LEDdecoder.v" Line 1. Module LEDdecoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/jimar/Desktop/vivado test/led 2/codes/FourDigitLeDriver.v" Line 2. Module FourDigitLeDriver doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/jimar/Desktop/vivado test/led 2/codes/LEDdecoder.v" Line 1. Module LEDdecoder doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LEDdecoder
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module unisims_ver.MMCME2_BASE(CLKFBOUT_MULT_F=32.0...
+Compiling module xil_defaultlib.FourDigitLeDriver
+Compiling module xil_defaultlib.LEDdecoder_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LEDdecoder_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LEDdecoder_testbench_behav -key {Behavioral:sim_1:Functional:LEDdecoder_testbench} -tclbatch {LEDdecoder_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source LEDdecoder_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'LEDdecoder_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3619.391 ; gain = 0.000
+run 10000 ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/jimar/Desktop/vivado test/led 2/led.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Sun Oct 30 21:23:47 2022] Launched synth_1...
+Run output will be captured here: C:/Users/jimar/Desktop/vivado test/led 2/led.runs/synth_1/runme.log
+close_design
+launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/jimar/Desktop/vivado test/led 2/codes/constrains.xdc]
+Finished Parsing XDC File [C:/Users/jimar/Desktop/vivado test/led 2/codes/constrains.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3619.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim/LEDdecoder_testbench_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim/LEDdecoder_testbench_func_synth.v
+INFO: [SIM-utils-54] Inspecting design source files for 'LEDdecoder_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim'
+"xvlog --incr --relax -prj LEDdecoder_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim/LEDdecoder_testbench_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FourDigitLeDriver
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/LEDdecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/testbench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1418a4aa6b4a48d4a5e36705663f45d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot LEDdecoder_testbench_func_synth xil_defaultlib.LEDdecoder_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LEDdecoder
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDPE(INIT=1'b0)
+Compiling module unisims_ver.OBUFT
+Compiling module xil_defaultlib.FourDigitLeDriver
+Compiling module xil_defaultlib.LEDdecoder_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LEDdecoder_testbench_func_synth
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LEDdecoder_testbench_func_synth -key {Post-Synthesis:sim_1:Functional:LEDdecoder_testbench} -tclbatch {LEDdecoder_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source LEDdecoder_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'LEDdecoder_testbench_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 3619.391 ; gain = 0.000
+run 10000 ns
+launch_runs impl_1 -jobs 4
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3619.391 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 3619.391 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3619.391 ; gain = 0.000
+[Sun Oct 30 21:24:53 2022] Launched impl_1...
+Run output will be captured here: C:/Users/jimar/Desktop/vivado test/led 2/led.runs/impl_1/runme.log
+current_sim simulation_2
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_design impl_1
+close_design
+launch_simulation -mode post-implementation -type functional
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 3619.391 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 3619.391 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3619.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode funcsim -nolib -force -file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/func/xsim/LEDdecoder_testbench_func_impl.v"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/func/xsim/LEDdecoder_testbench_func_impl.v
+INFO: [SIM-utils-54] Inspecting design source files for 'LEDdecoder_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/func/xsim'
+"xvlog --incr --relax -prj LEDdecoder_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/func/xsim/LEDdecoder_testbench_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FourDigitLeDriver
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/LEDdecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/testbench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/func/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1418a4aa6b4a48d4a5e36705663f45d0 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot LEDdecoder_testbench_func_impl xil_defaultlib.LEDdecoder_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LEDdecoder
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.FDPE(INIT=1'b0)
+Compiling module unisims_ver.OBUFT
+Compiling module xil_defaultlib.FourDigitLeDriver
+Compiling module xil_defaultlib.LEDdecoder_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LEDdecoder_testbench_func_impl
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LEDdecoder_testbench_func_impl -key {Post-Implementation:sim_1:Functional:LEDdecoder_testbench} -tclbatch {LEDdecoder_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source LEDdecoder_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'LEDdecoder_testbench_func_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 3619.391 ; gain = 0.000
+run 10000 ns
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 21:26:33 2022] Launched impl_1...
+Run output will be captured here: C:/Users/jimar/Desktop/vivado test/led 2/led.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 30 21:29:51 2022] Launched impl_1...
+Run output will be captured here: C:/Users/jimar/Desktop/vivado test/led 2/led.runs/impl_1/runme.log
+open_hw
+current_design synth_1
+launch_simulation -mode post-synthesis -type timing
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/timing/xsim/LEDdecoder_testbench_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/timing/xsim/LEDdecoder_testbench_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/timing/xsim/LEDdecoder_testbench_time_synth.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/timing/xsim/LEDdecoder_testbench_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'LEDdecoder_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj LEDdecoder_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/timing/xsim/LEDdecoder_testbench_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FourDigitLeDriver
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/LEDdecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/testbench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/timing/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1418a4aa6b4a48d4a5e36705663f45d0 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot LEDdecoder_testbench_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.LEDdecoder_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "LEDdecoder_testbench_time_synth.sdf", for root module "LEDdecoder_testbench/FourDigitLeDriver_inst".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "LEDdecoder_testbench_time_synth.sdf", for root module "LEDdecoder_testbench/FourDigitLeDriver_inst".
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LEDdecoder
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDPE(INIT=1'b0)
+Compiling module simprims_ver.OBUFT
+Compiling module xil_defaultlib.FourDigitLeDriver
+Compiling module xil_defaultlib.LEDdecoder_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LEDdecoder_testbench_time_synth
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/jimar/Desktop/vivado -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/Users/jimar/Desktop/vivado" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 30 21:35:22 2022...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3922.543 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LEDdecoder_testbench_time_synth -key {Post-Synthesis:sim_1:Timing:LEDdecoder_testbench} -tclbatch {LEDdecoder_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source LEDdecoder_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'LEDdecoder_testbench_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 3922.543 ; gain = 0.000
+run 10000 ns
+launch_simulation -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/timing/xsim/LEDdecoder_testbench_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/timing/xsim/LEDdecoder_testbench_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/timing/xsim/LEDdecoder_testbench_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/timing/xsim/LEDdecoder_testbench_time_impl.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'LEDdecoder_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/timing/xsim'
+"xvlog --incr --relax -prj LEDdecoder_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/timing/xsim/LEDdecoder_testbench_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FourDigitLeDriver
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/LEDdecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/testbench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDdecoder_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/timing/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 1418a4aa6b4a48d4a5e36705663f45d0 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot LEDdecoder_testbench_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.LEDdecoder_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "LEDdecoder_testbench_time_impl.sdf", for root module "LEDdecoder_testbench/FourDigitLeDriver_inst".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "LEDdecoder_testbench_time_impl.sdf", for root module "LEDdecoder_testbench/FourDigitLeDriver_inst".
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LEDdecoder
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.FDPE(INIT=1'b0)
+Compiling module simprims_ver.OBUFT
+Compiling module xil_defaultlib.FourDigitLeDriver
+Compiling module xil_defaultlib.LEDdecoder_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LEDdecoder_testbench_time_impl
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/jimar/Desktop/vivado -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/Users/jimar/Desktop/vivado" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 30 21:36:35 2022...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LEDdecoder_testbench_time_impl -key {Post-Implementation:sim_1:Timing:LEDdecoder_testbench} -tclbatch {LEDdecoder_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source LEDdecoder_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'LEDdecoder_testbench_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3922.543 ; gain = 0.000
+run 10000 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_sim simulation_7
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_sim simulation_6
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+current_sim simulation_5
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 30 21:37:34 2022...

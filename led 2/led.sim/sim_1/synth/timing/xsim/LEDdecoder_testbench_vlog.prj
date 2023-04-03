@@ -1,0 +1,8 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"LEDdecoder_testbench_time_synth.v" \
+"../../../../../codes/LEDdecoder.v" \
+"../../../../../codes/testbench1.v" \
+
+# Do not sort compile order
+nosort

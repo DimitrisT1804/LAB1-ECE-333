@@ -1,0 +1,7 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/jimar/Desktop/vivado test/led/codes/parameters.v,1666393131,verilog,,,,,,,,,,,,
+C:/Users/jimar/Desktop/vivado test/led/codes/testbench1.v,1666394957,verilog,,,C:/Users/jimar/Desktop/vivado test/led/codes/parameters.v,LEDdecoder_testbench,,,,,,,,
+C:/Users/jimar/Desktop/vivado test/led/led.sim/sim_1/impl/timing/xsim/LEDdecoder_testbench_time_impl.v,1666395562,verilog,,C:/Users/jimar/Desktop/vivado test/led/codes/testbench1.v,,LEDdecoder;glbl,,,,,,,,

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Oct 31 21:42:46 2022
+# Process ID: 11176
+# Current directory: C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/timing/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/timing/xsim/xsim.dir/LEDdecoder_testbench_time_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/timing/xsim/webtalk.log
+# Journal file: C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/synth/timing/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/jimar/Desktop/vivado -notrace

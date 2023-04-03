@@ -1,0 +1,14 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/jimar/Desktop/vivado test/led/codes/FourDigitLeDriver.v,1666784282,verilog,,C:/Users/jimar/Desktop/vivado test/led/codes/LEDdecoder.v,C:/Users/jimar/Desktop/vivado test/led/codes/parameters.v,FourDigitLeDriver,,,,,,,,
+C:/Users/jimar/Desktop/vivado test/led/codes/LEDdecoder.v,1666781290,verilog,,C:/Users/jimar/Desktop/vivado test/led/codes/testbench1.v,C:/Users/jimar/Desktop/vivado test/led/codes/parameters.v,LEDdecoder,,,,,,,,
+C:/Users/jimar/Desktop/vivado test/led/codes/counter.v,1666783996,verilog,,C:/Users/jimar/Desktop/vivado test/led/codes/testbench1.v,,counter,,,,,,,,
+C:/Users/jimar/Desktop/vivado test/led/codes/parameters.v,1666393131,verilog,,,,,,,,,,,,
+C:/Users/jimar/Desktop/vivado test/led/codes/testbench1.v,1666740436,verilog,,,C:/Users/jimar/Desktop/vivado test/led/codes/parameters.v,LEDdecoder_testbench,,,,,,,,
+C:/Users/jimar/Desktop/vivado test/led/led.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/jimar/Desktop/vivado test/led/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,1666723281,verilog,,C:/Users/jimar/Desktop/vivado test/led/codes/LEDdecoder.v,,clk_wiz_0,,,../../../../led.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/jimar/Desktop/vivado test/led/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v,1666723280,verilog,,C:/Users/jimar/Desktop/vivado test/led/led.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../led.srcs/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/jimar/Desktop/vivado test/led/led.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.v,1666725041,verilog,,C:/Users/jimar/Desktop/vivado test/led/codes/LEDdecoder.v,,clk_wiz_1,,,../../../../led.srcs/sources_1/ip/clk_wiz_1,,,,,
+C:/Users/jimar/Desktop/vivado test/led/led.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1_clk_wiz.v,1666725041,verilog,,C:/Users/jimar/Desktop/vivado test/led/led.srcs/sources_1/ip/clk_wiz_1/clk_wiz_1.v,,clk_wiz_1_clk_wiz,,,../../../../led.srcs/sources_1/ip/clk_wiz_1,,,,,

@@ -1,0 +1,606 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Button is 0 and led is xxxxxxx
+
+Button is 0 and led is xx1xxxx
+
+Button is 0 and led is xx11xxx
+
+Button is 0 and led is xx11xx0
+
+Button is 0 and led is xx111x0
+
+Button is 0 and led is 1x111x0
+
+Button is 0 and led is 1x11110
+
+Button is 0 and led is 1111110
+
+Button is 0 and led is 1111010
+
+Button is 0 and led is 1110010
+
+Button is 0 and led is 0110010
+
+Button is 0 and led is 0110000
+
+Button is 0 and led is 0110100
+
+Button is 0 and led is 0111100
+
+Button is 0 and led is 1111100
+
+Button is 0 and led is 1111000
+
+Button is 0 and led is 1110000
+
+Button is 0 and led is 1110010
+
+Button is 0 and led is 0110010
+
+Button is 0 and led is 0110000
+
+Button is 1 and led is 0110000
+
+Button is 1 and led is 0110001
+
+Button is 1 and led is 0110101
+
+Button is 1 and led is 0110100
+
+Button is 1 and led is 0100100
+
+Button is 1 and led is 0100101
+
+Button is 1 and led is 0100111
+
+Button is 1 and led is 0101111
+
+Button is 1 and led is 0111111
+
+Button is 1 and led is 0101111
+
+Button is 1 and led is 1101111
+
+Button is 1 and led is 1101101
+
+Button is 1 and led is 1101111
+
+Button is 1 and led is 1101101
+
+Button is 1 and led is 1111101
+
+Button is 1 and led is 1111001
+
+Button is 1 and led is 1101001
+
+Button is 1 and led is 1101000
+
+Button is 1 and led is 1111000
+
+Button is 1 and led is 1111100
+
+Button is 1 and led is 1111101
+
+Button is 1 and led is 1111100
+
+Button is 1 and led is 1111000
+
+Button is 1 and led is 1110000
+
+Button is 1 and led is 1110001
+
+Button is 1 and led is 1111001
+
+Button is 1 and led is 1110001
+
+Button is 1 and led is 1110011
+
+Button is 1 and led is 1110001
+
+Button is 1 and led is 1111001
+
+Button is 1 and led is 1111011
+
+Button is 1 and led is 0111011
+
+Button is 1 and led is 0111001
+
+Button is 1 and led is 0011001
+
+Button is 1 and led is 0111001
+
+Button is 1 and led is 1111001
+
+Button is 0 and led is 1111001
+
+Button is 0 and led is 1111000
+
+Button is 0 and led is 1111001
+
+Button is 0 and led is 1110001
+
+Button is 0 and led is 1111001
+
+Button is 0 and led is 0111001
+
+Button is 0 and led is 1111001
+
+Button is 0 and led is 1101001
+
+Button is 0 and led is 1101000
+
+Button is 0 and led is 1111000
+
+Button is 0 and led is 1111001
+
+Button is 0 and led is 1111101
+
+Button is 0 and led is 1110101
+
+Button is 0 and led is 1110001
+
+Button is 0 and led is 1110011
+
+Button is 0 and led is 0110011
+
+Button is 0 and led is 0111011
+
+Button is 0 and led is 0101011
+
+Button is 0 and led is 1101011
+
+Button is 0 and led is 1101010
+
+Button is 0 and led is 1111010
+
+Button is 0 and led is 1110010
+
+Button is 0 and led is 1110011
+
+Button is 0 and led is 1111011
+
+Button is 0 and led is 1011011
+
+Button is 0 and led is 1011111
+
+Button is 0 and led is 0011111
+
+Button is 0 and led is 0111111
+
+Button is 0 and led is 1111111
+
+Button is 0 and led is 1110111
+
+Button is 0 and led is 1110101
+
+Button is 0 and led is 1110001
+
+Button is 0 and led is 1010001
+
+Button is 0 and led is 0010001
+
+Button is 0 and led is 1010001
+
+Button is 0 and led is 1010011
+
+Button is 0 and led is 1110011
+
+Button is 0 and led is 0110011
+
+Button is 0 and led is 0110010
+
+Button is 0 and led is 0111010
+
+Button is 0 and led is 0110010
+
+Button is 0 and led is 1110010
+
+Button is 0 and led is 1010010
+
+Button is 0 and led is 0010010
+
+Button is 0 and led is 0010000
+
+Button is 0 and led is 0110000
+
+Button is 0 and led is 0110001
+
+Button is 0 and led is 0110101
+
+Button is 0 and led is 0111101
+
+Button is 0 and led is 1111101
+
+Button is 0 and led is 1111100
+
+Button is 0 and led is 1111000
+
+Button is 0 and led is 1110000
+
+Button is 0 and led is 1110010
+
+Button is 0 and led is 1111010
+
+Button is 0 and led is 1111000
+
+Button is 0 and led is 0111000
+
+Button is 0 and led is 0110000
+
+Button is 0 and led is 1110000
+
+Button is 0 and led is 0110000
+
+Button is 0 and led is 0110001
+
+Button is 0 and led is 0110000
+
+Button is 0 and led is 0111000
+
+Button is 0 and led is 0110000
+
+Button is 0 and led is 1110000
+
+Button is 0 and led is 0110000
+
+Button is 0 and led is 0110001
+
+Button is 0 and led is 0110101
+
+Button is 0 and led is 0100101
+
+Button is 0 and led is 0101101
+
+Button is 0 and led is 1101101
+
+Button is 0 and led is 1101111
+
+Button is 0 and led is 1101101
+
+Button is 0 and led is 1111101
+
+Button is 0 and led is 1111100
+
+Button is 0 and led is 1101100
+
+Button is 0 and led is 1101000
+
+Button is 0 and led is 1111000
+
+Button is 0 and led is 1111001
+
+Button is 0 and led is 1111101
+
+Button is 0 and led is 1101101
+
+Button is 0 and led is 1101111
+
+Button is 0 and led is 1101101
+
+Button is 1 and led is 1101101
+
+Button is 1 and led is 1111101
+
+Button is 1 and led is 1111001
+
+Button is 1 and led is 1101001
+
+Button is 1 and led is 1101000
+
+Button is 1 and led is 1101100
+
+Button is 1 and led is 1111100
+
+Button is 1 and led is 1111101
+
+Button is 1 and led is 1110101
+
+Button is 1 and led is 1110001
+
+Button is 1 and led is 1110011
+
+Button is 1 and led is 0110011
+
+Button is 1 and led is 0110010
+
+Button is 1 and led is 0110011
+
+Button is 1 and led is 0110010
+
+Button is 1 and led is 0100010
+
+Button is 1 and led is 0101010
+
+Button is 1 and led is 0111010
+
+Button is 1 and led is 1111010
+
+Button is 1 and led is 1111011
+
+Button is 1 and led is 1110011
+
+Button is 1 and led is 1111011
+
+Button is 1 and led is 1111111
+
+Button is 1 and led is 1110111
+
+Button is 1 and led is 1010111
+
+Button is 1 and led is 0010111
+
+Button is 1 and led is 0010101
+
+Button is 1 and led is 0010001
+
+Button is 1 and led is 1010001
+
+Button is 1 and led is 1110001
+
+Button is 1 and led is 1010001
+
+Button is 1 and led is 0010001
+
+Button is 1 and led is 0010011
+
+Button is 1 and led is 0110011
+
+Button is 1 and led is 1110011
+
+Button is 1 and led is 0110011
+
+Button is 0 and led is 0110011
+
+Button is 0 and led is 0111011
+
+Button is 0 and led is 1111011
+
+Button is 0 and led is 1011011
+
+Button is 0 and led is 1010011
+
+Button is 0 and led is 0010011
+
+Button is 0 and led is 0011011
+
+Button is 0 and led is 0111011
+
+Button is 0 and led is 1111011
+
+Button is 0 and led is 1011011
+
+Button is 0 and led is 1011010
+
+Button is 0 and led is 1011011
+
+Button is 0 and led is 1010011
+
+Button is 0 and led is 1011011
+
+Button is 0 and led is 1011001
+
+Button is 0 and led is 1111001
+
+Button is 0 and led is 1111011
+
+Button is 0 and led is 1011011
+
+Button is 0 and led is 1001011
+
+Button is 0 and led is 1000011
+
+Button is 0 and led is 1001011
+
+Button is 0 and led is 1001111
+
+Button is 0 and led is 0001111
+
+Button is 0 and led is 0101111
+
+Button is 0 and led is 1101111
+
+Button is 0 and led is 1101101
+
+Button is 0 and led is 1001101
+
+Button is 0 and led is 1101101
+
+Button is 0 and led is 1111101
+
+Button is 0 and led is 1111100
+
+Button is 0 and led is 1111101
+
+Button is 0 and led is 1111001
+
+Button is 0 and led is 1101001
+
+Button is 0 and led is 1100001
+
+Button is 0 and led is 1100101
+
+Button is 0 and led is 1101101
+
+Button is 0 and led is 1100101
+
+Button is 0 and led is 1100001
+
+Button is 0 and led is 1101001
+
+Button is 0 and led is 1101101
+
+Button is 0 and led is 1101111
+
+Button is 0 and led is 1101101
+
+Button is 0 and led is 1001101
+
+Button is 0 and led is 1101101
+
+Button is 0 and led is 1111101
+
+Button is 0 and led is 1111001
+
+Button is 0 and led is 1101001
+
+Button is 0 and led is 1111001
+
+Button is 0 and led is 1111101
+
+Button is 0 and led is 1111001
+
+Button is 0 and led is 1111000
+
+Button is 0 and led is 1111001
+
+Button is 0 and led is 1110001
+
+Button is 0 and led is 1111001
+
+Button is 0 and led is 0111001
+
+Button is 0 and led is 1111001
+
+Button is 0 and led is 1101001
+
+Button is 0 and led is 1101000
+
+Button is 0 and led is 1111000
+
+Button is 0 and led is 1111001
+
+Button is 0 and led is 1111101
+
+Button is 0 and led is 1110101
+
+Button is 0 and led is 1110001
+
+Button is 0 and led is 1110011
+
+Button is 0 and led is 0110011
+
+Button is 1 and led is 0110011
+
+Button is 1 and led is 0110010
+
+Button is 1 and led is 0110011
+
+Button is 1 and led is 0110010
+
+Button is 1 and led is 0100010
+
+Button is 1 and led is 0101010
+
+Button is 1 and led is 0111010
+
+Button is 1 and led is 1111010
+
+Button is 1 and led is 1111011
+
+Button is 1 and led is 1110011
+
+Button is 1 and led is 1111011
+
+Button is 1 and led is 1111111
+
+Button is 1 and led is 1110111
+
+Button is 1 and led is 1010111
+
+Button is 1 and led is 0010111
+
+Button is 1 and led is 0010101
+
+Button is 1 and led is 0010001
+
+Button is 1 and led is 1010001
+
+Button is 1 and led is 1110001
+
+Button is 1 and led is 1010001
+
+Button is 1 and led is 0010001
+
+Button is 1 and led is 0010011
+
+Button is 1 and led is 0110011
+
+Button is 1 and led is 1110011
+
+Button is 1 and led is 0110011
+
+Button is 1 and led is 0111011
+
+Button is 1 and led is 0011011
+
+Button is 1 and led is 1011011
+
+Button is 1 and led is 1011010
+
+Button is 1 and led is 1011011
+
+Button is 1 and led is 1010011
+
+Button is 1 and led is 1011011
+
+Button is 1 and led is 1011001
+
+Button is 1 and led is 1111001
+
+Button is 1 and led is 1111011
+
+Button is 1 and led is 1011011
+
+Button is 1 and led is 1010011
+
+Button is 1 and led is 1011011
+
+Button is 1 and led is 1011111
+
+Button is 1 and led is 0011111
+
+Button is 1 and led is 0111111
+
+Button is 1 and led is 0011111
+
+Button is 1 and led is 1011111
+
+Button is 1 and led is 1011110
+
+Button is 1 and led is 1011111
+
+Button is 1 and led is 1011011
+
+Button is 1 and led is 1010011
+
+Button is 1 and led is 1010111
+
+Button is 1 and led is 1011111
+
+Button is 1 and led is 1011101
+
+Button is 1 and led is 1010101
+
+Button is 1 and led is 1110101
+
+Button is 1 and led is 1110001
+
+Button is 1 and led is 1010001
+
+Button is 1 and led is 1010011
+
+Button is 1 and led is 1011011
+
+Button is 1 and led is 1011111
+
+Button is 1 and led is 1111111
+
+Button is 1 and led is 0111111
+
+Button is 1 and led is 0011111
+
+Button is 1 and led is 1011111
+
+Button is 0 and led is 1011111
+

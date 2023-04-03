@@ -1,0 +1,7 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/Dimitris/Desktop/lab1/led 2/codes/parameters.v,1666393132,verilog,,,,,,,,,,,,
+C:/Users/Dimitris/Desktop/lab1/led 2/codes/testbench1.v,1667391230,verilog,,,C:/Users/Dimitris/Desktop/lab1/led 2/codes/parameters.v,testbench,,,,,,,,
+C:/Users/Dimitris/Desktop/lab1/led 2/led.sim/sim_1/impl/func/xsim/testbench_func_impl.v,1667397778,verilog,,C:/Users/Dimitris/Desktop/lab1/led 2/codes/testbench1.v,,FourDigitLeDriver;LEDdecoder;counter;glbl,,,,,,,,

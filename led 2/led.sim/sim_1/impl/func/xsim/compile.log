@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/led.sim/sim_1/impl/func/xsim/testbench_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FourDigitLeDriver
+INFO: [VRFC 10-311] analyzing module counter
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jimar/Desktop/vivado test/led 2/codes/testbench1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench

@@ -1,0 +1,444 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Oct 26 14:18:53 2022
+# Process ID: 24176
+# Current directory: C:/Users/jimar/Desktop/vivado test/led/led.runs/synth_1
+# Command line: vivado.exe -log FourDigitLeDriver.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FourDigitLeDriver.tcl
+# Log file: C:/Users/jimar/Desktop/vivado test/led/led.runs/synth_1/FourDigitLeDriver.vds
+# Journal file: C:/Users/jimar/Desktop/vivado test/led/led.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FourDigitLeDriver.tcl -notrace
+Command: synth_design -top FourDigitLeDriver -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14604 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 456.371 ; gain = 95.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FourDigitLeDriver' [C:/Users/jimar/Desktop/vivado test/led/codes/FourDigitLeDriver.v:2]
+	Parameter zero bound to: 7'b1111110 
+	Parameter one bound to: 7'b0110000 
+	Parameter two bound to: 7'b1101101 
+	Parameter three bound to: 7'b1111001 
+	Parameter four bound to: 7'b0110011 
+	Parameter five bound to: 7'b1011011 
+	Parameter six bound to: 7'b1011111 
+	Parameter seven bound to: 7'b1110000 
+	Parameter eight bound to: 7'b1111111 
+	Parameter nine bound to: 7'b1111011 
+	Parameter a bound to: 7'b1110111 
+	Parameter b bound to: 7'b0011111 
+	Parameter c bound to: 7'b1001110 
+	Parameter d bound to: 7'b0111101 
+	Parameter e bound to: 7'b1001111 
+	Parameter f bound to: 7'b1000111 
+	Parameter zero_in bound to: 4'b0000 
+	Parameter one_in bound to: 4'b0001 
+	Parameter two_in bound to: 4'b0010 
+	Parameter three_in bound to: 4'b0011 
+	Parameter four_in bound to: 4'b0100 
+	Parameter five_in bound to: 4'b0101 
+	Parameter six_in bound to: 4'b0110 
+	Parameter seven_in bound to: 4'b0111 
+	Parameter eight_in bound to: 4'b1000 
+	Parameter nine_in bound to: 4'b1001 
+	Parameter a_in bound to: 4'b1010 
+	Parameter b_in bound to: 4'b1011 
+	Parameter c_in bound to: 4'b1100 
+	Parameter d_in bound to: 4'b1101 
+	Parameter e_in bound to: 4'b1110 
+	Parameter f_in bound to: 4'b1111 
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26837]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 32.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 128.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (1#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26837]
+WARNING: [Synth 8-350] instance 'MMCME2_BASE_inst' of module 'MMCME2_BASE' requires 18 connections, but only 5 given [C:/Users/jimar/Desktop/vivado test/led/codes/FourDigitLeDriver.v:58]
+INFO: [Synth 8-6157] synthesizing module 'LEDdecoder' [C:/Users/jimar/Desktop/vivado test/led/codes/LEDdecoder.v:1]
+	Parameter zero bound to: 7'b1111110 
+	Parameter one bound to: 7'b0110000 
+	Parameter two bound to: 7'b1101101 
+	Parameter three bound to: 7'b1111001 
+	Parameter four bound to: 7'b0110011 
+	Parameter five bound to: 7'b1011011 
+	Parameter six bound to: 7'b1011111 
+	Parameter seven bound to: 7'b1110000 
+	Parameter eight bound to: 7'b1111111 
+	Parameter nine bound to: 7'b1111011 
+	Parameter a bound to: 7'b1110111 
+	Parameter b bound to: 7'b0011111 
+	Parameter c bound to: 7'b1001110 
+	Parameter d bound to: 7'b0111101 
+	Parameter e bound to: 7'b1001111 
+	Parameter f bound to: 7'b1000111 
+	Parameter zero_in bound to: 4'b0000 
+	Parameter one_in bound to: 4'b0001 
+	Parameter two_in bound to: 4'b0010 
+	Parameter three_in bound to: 4'b0011 
+	Parameter four_in bound to: 4'b0100 
+	Parameter five_in bound to: 4'b0101 
+	Parameter six_in bound to: 4'b0110 
+	Parameter seven_in bound to: 4'b0111 
+	Parameter eight_in bound to: 4'b1000 
+	Parameter nine_in bound to: 4'b1001 
+	Parameter a_in bound to: 4'b1010 
+	Parameter b_in bound to: 4'b1011 
+	Parameter c_in bound to: 4'b1100 
+	Parameter d_in bound to: 4'b1101 
+	Parameter e_in bound to: 4'b1110 
+	Parameter f_in bound to: 4'b1111 
+INFO: [Synth 8-226] default block is never used [C:/Users/jimar/Desktop/vivado test/led/codes/LEDdecoder.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'LEDdecoder' (2#1) [C:/Users/jimar/Desktop/vivado test/led/codes/LEDdecoder.v:1]
+WARNING: [Synth 8-5788] Register count_reg in module FourDigitLeDriver is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/jimar/Desktop/vivado test/led/codes/FourDigitLeDriver.v:91]
+WARNING: [Synth 8-3848] Net char in module/entity FourDigitLeDriver does not have driver. [C:/Users/jimar/Desktop/vivado test/led/codes/FourDigitLeDriver.v:16]
+WARNING: [Synth 8-3848] Net an3 in module/entity FourDigitLeDriver does not have driver. [C:/Users/jimar/Desktop/vivado test/led/codes/FourDigitLeDriver.v:7]
+WARNING: [Synth 8-3848] Net an2 in module/entity FourDigitLeDriver does not have driver. [C:/Users/jimar/Desktop/vivado test/led/codes/FourDigitLeDriver.v:7]
+WARNING: [Synth 8-3848] Net an1 in module/entity FourDigitLeDriver does not have driver. [C:/Users/jimar/Desktop/vivado test/led/codes/FourDigitLeDriver.v:7]
+WARNING: [Synth 8-3848] Net an0 in module/entity FourDigitLeDriver does not have driver. [C:/Users/jimar/Desktop/vivado test/led/codes/FourDigitLeDriver.v:7]
+WARNING: [Synth 8-3848] Net dp in module/entity FourDigitLeDriver does not have driver. [C:/Users/jimar/Desktop/vivado test/led/codes/FourDigitLeDriver.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'FourDigitLeDriver' (3#1) [C:/Users/jimar/Desktop/vivado test/led/codes/FourDigitLeDriver.v:2]
+WARNING: [Synth 8-3331] design FourDigitLeDriver has unconnected port an3
+WARNING: [Synth 8-3331] design FourDigitLeDriver has unconnected port an2
+WARNING: [Synth 8-3331] design FourDigitLeDriver has unconnected port an1
+WARNING: [Synth 8-3331] design FourDigitLeDriver has unconnected port an0
+WARNING: [Synth 8-3331] design FourDigitLeDriver has unconnected port dp
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 511.336 ; gain = 150.090
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin LEDdecoder_inst:char[3] to constant 0 [C:/Users/jimar/Desktop/vivado test/led/codes/FourDigitLeDriver.v:85]
+WARNING: [Synth 8-3295] tying undriven pin LEDdecoder_inst:char[2] to constant 0 [C:/Users/jimar/Desktop/vivado test/led/codes/FourDigitLeDriver.v:85]
+WARNING: [Synth 8-3295] tying undriven pin LEDdecoder_inst:char[1] to constant 0 [C:/Users/jimar/Desktop/vivado test/led/codes/FourDigitLeDriver.v:85]
+WARNING: [Synth 8-3295] tying undriven pin LEDdecoder_inst:char[0] to constant 0 [C:/Users/jimar/Desktop/vivado test/led/codes/FourDigitLeDriver.v:85]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 511.336 ; gain = 150.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 511.336 ; gain = 150.090
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jimar/Desktop/vivado test/led/codes/constrains.xdc]
+WARNING: [Vivado 12-584] No ports matched 'a'. [C:/Users/jimar/Desktop/vivado test/led/codes/constrains.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jimar/Desktop/vivado test/led/codes/constrains.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'b'. [C:/Users/jimar/Desktop/vivado test/led/codes/constrains.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jimar/Desktop/vivado test/led/codes/constrains.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'c'. [C:/Users/jimar/Desktop/vivado test/led/codes/constrains.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jimar/Desktop/vivado test/led/codes/constrains.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'd'. [C:/Users/jimar/Desktop/vivado test/led/codes/constrains.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jimar/Desktop/vivado test/led/codes/constrains.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'e'. [C:/Users/jimar/Desktop/vivado test/led/codes/constrains.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jimar/Desktop/vivado test/led/codes/constrains.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'f'. [C:/Users/jimar/Desktop/vivado test/led/codes/constrains.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jimar/Desktop/vivado test/led/codes/constrains.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'g'. [C:/Users/jimar/Desktop/vivado test/led/codes/constrains.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/jimar/Desktop/vivado test/led/codes/constrains.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/jimar/Desktop/vivado test/led/codes/constrains.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jimar/Desktop/vivado test/led/codes/constrains.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FourDigitLeDriver_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FourDigitLeDriver_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 797.824 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 797.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 797.871 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 797.871 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 797.871 ; gain = 436.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 797.871 ; gain = 436.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 797.871 ; gain = 436.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 797.871 ; gain = 436.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FourDigitLeDriver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+Module LEDdecoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design FourDigitLeDriver has unconnected port an3
+WARNING: [Synth 8-3331] design FourDigitLeDriver has unconnected port an2
+WARNING: [Synth 8-3331] design FourDigitLeDriver has unconnected port an1
+WARNING: [Synth 8-3331] design FourDigitLeDriver has unconnected port an0
+WARNING: [Synth 8-3331] design FourDigitLeDriver has unconnected port dp
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\count_reg[0]_P )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\count_reg[1]_P )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\count_reg[2]_P )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\count_reg[3]_P )
+WARNING: [Synth 8-3332] Sequential element (count_reg[3]_P) is unused and will be removed from module FourDigitLeDriver.
+WARNING: [Synth 8-3332] Sequential element (count_reg[2]_P) is unused and will be removed from module FourDigitLeDriver.
+WARNING: [Synth 8-3332] Sequential element (count_reg[1]_P) is unused and will be removed from module FourDigitLeDriver.
+WARNING: [Synth 8-3332] Sequential element (count_reg[0]_P) is unused and will be removed from module FourDigitLeDriver.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 797.871 ; gain = 436.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 844.855 ; gain = 483.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 845.004 ; gain = 483.758
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 855.090 ; gain = 493.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 855.090 ; gain = 493.844
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 855.090 ; gain = 493.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 855.090 ; gain = 493.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 855.090 ; gain = 493.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 855.090 ; gain = 493.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 855.090 ; gain = 493.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |LUT2        |     4|
+|2     |LUT3        |     2|
+|3     |LUT4        |     1|
+|4     |LUT5        |     2|
+|5     |LUT6        |     4|
+|6     |MMCME2_BASE |     1|
+|7     |FDCE        |     4|
+|8     |LDC         |     4|
+|9     |IBUF        |     2|
+|10    |OBUF        |    12|
+|11    |OBUFT       |     9|
++------+------------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    45|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 855.090 ; gain = 493.844
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 855.090 ; gain = 207.309
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 855.090 ; gain = 493.844
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 867.562 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  LDC => LDCE: 4 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 33 Warnings, 7 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 867.562 ; gain = 519.293
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 867.562 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jimar/Desktop/vivado test/led/led.runs/synth_1/FourDigitLeDriver.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FourDigitLeDriver_utilization_synth.rpt -pb FourDigitLeDriver_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 26 14:19:11 2022...
